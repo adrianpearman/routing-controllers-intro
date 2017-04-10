@@ -17,7 +17,7 @@ class PagesController < ApplicationController
 
   def set_kitten_url
     requested_size = params[:size]
-    @kitten_url = "http://lorempixel.com/400/200/cats"
+    @kitten_url = "http://lorempixel.com/#{requested_size}/#{requested_size}/cats"
   end
 
   def contest
