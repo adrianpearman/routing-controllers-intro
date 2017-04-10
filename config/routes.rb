@@ -15,4 +15,7 @@ Rails.application.routes.draw do
   #add method to pull itten photo by size
   get '/kitten/:size' => 'pages#kitten'
 
+  #add method to display multiple photos to the page
+  get '/kittens' => 'pages#kittens'
+
 end

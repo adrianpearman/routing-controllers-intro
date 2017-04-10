@@ -1,13 +1,22 @@
 class PagesController < ApplicationController
+  # to simplify the code on lines 2 and 3
+  before_action :set_kitten_url, only: [:kitten, :kittens]
 
-  #add value for main header title
+  #method adding value to main header title
   def welcome
-    @header = "This is the welcome page"
+    @header = "This is the Welcome Page"
   end
 
+  #2 method for adding photo to page
   def kitten
+  end
+
+  #3 method for adding photos to page
+  def kittens
+  end
+
+  def set_kitten_url
     requested_size = params[:size]
     @kitten_url = "http://lorempixel.com/400/200/cats"
   end
-  
 end
