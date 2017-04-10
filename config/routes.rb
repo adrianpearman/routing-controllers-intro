@@ -18,4 +18,8 @@ Rails.application.routes.draw do
   #add method to display multiple photos to the page
   get '/kittens' => 'pages#kittens'
 
+
+  get '/secrets/:magic_word'=> 'pages#secrets'
+
+  
 end
